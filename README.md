@@ -14,7 +14,7 @@ DELETE : Delete Robot
 To demonstrate Authentication 2 additional End points are also covered here . 
 They just demonstrate how to generate successful bearer token to authenticate over the apis for CRUD operation.
 
-The project demonstration has been done using Laravel 5.7 on the docker container on the top of Ubuntu 19.04
+## The project demonstration has been done using Laravel 5.7 on the docker container on the top of Ubuntu 19.04
 
 Please follow the instruction below to run the project
 
@@ -31,7 +31,7 @@ Please follow the instruction below to run the project
 The http server should be available on the port 8081 and you should be able to access the end point mentioned below
 
 
-Feature test for  Login and CRUD has been included please  run the command below from docker vm . 
+## Feature test for  Login and CRUD has been included please  run the command below from docker vm . 
 
 Steps
 
@@ -42,9 +42,9 @@ Steps
 
 API DOCS
 
-Check the API docs on api/public/docs/index.html 
+## Check the API docs on api/public/docs/index.html 
 
-Additionally you should be able to  generate  Api using artisan command ‘php artisan apidoc:generate’
+## Additionally you should be able to  generate  Api using artisan command ‘php artisan apidoc:generate’
 
 https://laravel-apidoc-generator.readthedocs.io/en/latest/
 
@@ -110,7 +110,7 @@ Authentication is defined  defined below  for  admin . Admin should be able to d
 2. Create new middleware auth:api_mechanics and check the role mechanics . Use that just for patch api .
 Like below
 
-Admin Routes
+## Admin Routes
 
 ```
 Route::group(['middleware' => 'auth:api'], function() {
@@ -123,7 +123,7 @@ Route::group(['middleware' => 'auth:api'], function() {
 });
 ```
 
-Mechanics routes
+## Mechanics routes
 
 ```
 Route::group(['middleware' => 'auth:api_mechanics'], function() {
@@ -131,7 +131,7 @@ Route::group(['middleware' => 'auth:api_mechanics'], function() {
 });
 ```
 
-Guest routes
+## Guest routes
 
 ```
 Route::post('api/register', 'Auth\RegisterController@register');
@@ -152,7 +152,7 @@ Route::post('api/login', 'Auth\LoginController@login')->name('login');
 
 
 
-1.	Register End point
+## 1.	Register End point
 
 ```
 curl -X POST http://localhost:8081/api/register \
@@ -170,7 +170,7 @@ Outcome
 On successful registration user will automatically get logged in and issue the api_token which will be used for authentication for CRUD of robot
 
 
-2. Login End point
+## 2. Login End point
 
 If users are already registered , they can access the login end point api 
 
@@ -191,7 +191,7 @@ On successful login the api will issue the api_key  like the Register end point
 
 
 
-3.  Create Robot 
+## 3.  Create Robot 
 
 Pass the Api Key as the bearer token
 
@@ -205,7 +205,7 @@ curl -X POST http://localhost:8081/api/robots \
  
  ```
 
-4. Update Robot 
+## 4. Update Robot 
 ```
 curl -X PUT http://localhost:8081/api/robots/1 \
  -H "Accept: application/json" \
@@ -215,7 +215,7 @@ curl -X PUT http://localhost:8081/api/robots/1 \
 
 ```
 
-5. Delete Robot
+## 5. Delete Robot
 ```
 curl -X DELETE  http://localhost:8081/api/robots/1 \
  -H "Accept: application/json" \
@@ -223,7 +223,7 @@ curl -X DELETE  http://localhost:8081/api/robots/1 \
  -H "Authorization: Bearer Dg345BOxcEr86muvCpjaqIRBR4eXvQi4LayvXGC2yPDoe6BqZp6DXTmLHKl8" 
  ```
 
-6. List Robot
+## 6. List Robot
 
 ```
 curl -X GET  http://localhost:8081/api/robots/1 \
