@@ -255,9 +255,13 @@ Two factor authentication is adding second layer of authentication  after  succe
 The simplest way to implement 2  factor authentication is below
 
 1. generate random 4 digit pin code after username/password validation is passed by the application
+
 2. Save that code  to the database  and send that over email or sms
+
 3. Display the input box immediately after 1st level login with the clear instruction about login code
+
 4. Check on the database for that code  along with username /password and /or access token .
+
 5. Restrict the number of attempts for token
 
 We can also use the third party tools like Autho /Authy for 2 factor authentication using their API
@@ -268,11 +272,17 @@ https://www.twilio.com/docs/authy/tutorials/two-factor-authentication-php-larave
 
 
 What do you consider to be a strong password?
+
 We can use the set of rules to make password strong
+
 1. At least 8 character long
+
 2. At least 1 upper case and 1 lower case mandatory
+
 3.  At least one special character compulsory
+
 4. At least one number compulsory
+
 Using regular expression we can find out the number of matched rules  and show the strength of the password as percentage .
 
 
