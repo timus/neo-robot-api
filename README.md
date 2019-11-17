@@ -16,6 +16,8 @@ Please follow the instruction below to run the project
 1. Clone the project
 2. Enter to project folder
 3. Spin up the container using ‘docker-compose up’
+4. Run docker-compose exec php bash
+5. Run php artisan migrate from vm
 
 The http server should be available on the port 8081 and you should be able to access the end point mentioned below
 
