@@ -26,7 +26,9 @@ Please follow the instruction below to run the project
 
 4. Run docker-compose exec php bash
 
-5. Run php artisan migrate from vm
+5. Run composer install from vm
+
+6. Run php artisan migrate from vm
 
 The http server should be available on the port 8081 and you should be able to access the end point mentioned below
 
