@@ -16,17 +16,27 @@ services:
     ports:
       - "8083:3306"
 
-  
 
-  web:
+
+  webserver:
     image: nginx:alpine
-    container_name: web
+    container_name: webserver
     working_dir: /application
     volumes:
      - .:/application
      - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+
     ports:
      - "8081:80"
+    tty: true
+
+    depends_on:
+    - php
+
+    networks:
+       - default
+
+
 
   php:
     build: phpdocker/php-fpm
@@ -36,3 +46,11 @@ services:
       # - ./server:/application
     - ./api:/application
     - ./phpdocker/php-fpm/php-ini-overrides.ini:/etc/php/7.2/fpm/conf.d/99-overrides.ini
+
+    depends_on:
+    - mysql-db
+
+
+
+
+
