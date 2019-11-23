@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efa4becf-0191-4c42-b1d3-8fa3ae953565" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/.env.test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage-db/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/storage-db/auto.cnf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage-db/databasename/migrations.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage-db/databasename/migrations.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage-db/databasename/password_resets.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage-db/databasename/password_resets.ibd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage-db/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/storage-db/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage-db/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/storage-db/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage-db/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/storage-db/ibdata1" afterDir="false" />
@@ -147,6 +148,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api" />
       <recent name="$PROJECT_DIR$/api/routes" />
       <recent name="$PROJECT_DIR$/api/database/factories" />
     </key>
@@ -174,7 +176,9 @@
       <option name="presentableId" value="Default" />
       <updated>1573856834307</updated>
       <workItem from="1573856835416" duration="19680000" />
-      <workItem from="1574072794527" duration="247000" />
+      <workItem from="1574072794527" duration="593000" />
+      <workItem from="1574331921276" duration="623000" />
+      <workItem from="1574468264946" duration="6235000" />
     </task>
     <servers />
   </component>
